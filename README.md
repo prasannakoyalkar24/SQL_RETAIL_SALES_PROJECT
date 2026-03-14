@@ -70,14 +70,14 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-1. **WRITE A SQL QUERY TO RETRIEVE SALES DONE ON 2022/11/05**:
+1. **Write a sql query to retrieve sales done on 2022/11/05**:
 ```sql
 SELECT *
 FROM RETAIL_SALES
 WHERE SALE_DATE = '2022-11-05';
 ```
 
-2. **WRITE A SQL QUERY TO RETRIEVE SALES FROM CLOTHING CATEGORY,QUANTITY IS MORE THAN 4, AND SALES HAPPENED ON NOV 2022**:
+2. **Write a sql query to retrieve sales from clothing category,quantity is more than 4, and sales happened on Nov 2022**:
 ```sql
 SELECT *
 FROM retail_sales
@@ -86,7 +86,7 @@ AND quantity >= 4
 AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
 ```
 
-3. **WRITE A SQL QUERY TO CALCULATE TOTAL SALES BASED ON EACH CATEGORY**:
+3. **Write a sql query to calculate total sales based on each category**:
 ```sql
 SELECT CATEGORY ,
 SUM(TOTAL_SALE),COUNT(*)
@@ -94,7 +94,7 @@ FROM retail_sales
 GROUP BY CATEGORY;
 ```
 
-4. **WRITE A SQL QUERY TO RETRIEVE AVERAGE AGE OF CUSTOMERS FROM BEAUTY CATEGORY**:
+4. **write a sql query to retrieve average age of customers from 'beauty' category**:
 ```sql
 SELECT
     ROUND(AVG(age), 2) as avg_age
